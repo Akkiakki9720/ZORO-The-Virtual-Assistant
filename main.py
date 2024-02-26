@@ -12,7 +12,7 @@ import numpy as np
 # Load the pre-trained face cascade classifier
 face_cascade = cv2.CascadeClassifier(cv2.data.haarcascades + 'haarcascade_frontalface_default.xml')
 
-# Load a sample image for face authentication (replace 'sample_image.jpg' with the actual image file)
+# Load a sample image for face authentication 
 known_image = cv2.imread('ref.jpg', cv2.IMREAD_GRAYSCALE)
 
 # Check if the image is loaded successfully
@@ -120,7 +120,7 @@ if success == 'yes':
         while True:
             query=takecommand().lower()
             if 'send message to' in query:
-                d1 = {"mummy": "+91 9911735527", "papa": "+91 9891273597", "rishika": "+91 8546063336"}
+                d1 = {"mummy": "+91.....", "papa": "+91.....", "friend": "+91....."} #add number in place of dots.
                 name=query.replace("send message to ","")
                 say('whats the message')
                 message=takecommand()
